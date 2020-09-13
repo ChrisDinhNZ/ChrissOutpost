@@ -162,7 +162,8 @@
          <h2 class="text-center mt-0">Scrapbook</h2>
          <hr class="divider-white my-4" />
          <div class="row">
-            <div class="shadow rounded col-lg-4 col-sm-6 mb-4">
+            <!-- dev tips-->
+            <div class="shadow rounded col-lg-4 col-sm-6 m-4">
                <div class="scrapbook-item my-3">
                   <a class="scrapbook-link" data-toggle="modal" href="#devTipsModal">
                      <div class="scrapbook-hover">
@@ -173,7 +174,24 @@
                   <div class="scrapbook-caption">
                      <div class="scrapbook-caption-heading text-primary">Dev Tips</div>
                      <div class="caption-subheading text-muted">
-                        Useful software/programming solutions and tips I picked up along the way
+                        Useful software/programming solutions and tips I picked up along the way.
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- ascii table-->
+            <div class="shadow rounded col-lg-4 col-sm-6 mb-4">
+               <div class="scrapbook-item my-3">
+                  <a class="scrapbook-link" data-toggle="modal" href="#asciiTableModal">
+                     <div class="scrapbook-hover">
+                        <div class="scrapbook-hover-content"><i class="fas fa-expand fa-3x"></i></div>
+                     </div>
+                     <img class="img-fluid" src="assets/img/scrapbook/ascii_table.png" alt="" />
+                  </a>
+                  <div class="scrapbook-caption">
+                     <div class="scrapbook-caption-heading text-primary">Ascii Table</div>
+                     <div class="caption-subheading text-muted">
+                        For quick reference when I need it.
                      </div>
                   </div>
                </div>
@@ -293,6 +311,30 @@
                            </p>
                            <hr class="divider-orange my-4 text-center" />
                         </div>
+                        <button class="btn btn-primary" data-dismiss="modal" type="button">
+                           <i class="fas fa-times mr-1"></i>
+                           Close
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- asciiTableModal-->
+   <div class="scrapbook-modal modal fade" id="asciiTableModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+            </div>
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                     <div class="modal-body">
+                        <h2 class="text-primary">Ascii Table</h2>
+                        <img class="img-fluid d-block mx-auto" src="assets/img/scrapbook/ascii_table.png" alt="" />
                         <button class="btn btn-primary" data-dismiss="modal" type="button">
                            <i class="fas fa-times mr-1"></i>
                            Close
