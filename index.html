@@ -33,9 +33,6 @@
          <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#iot-odyssey">An IoT Odyssey</a></li>
-               <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#multilinks-project">Multilinks
-                     Project</a></li>
-               <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#scrapbook">Scrapbook</a></li>
                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
             </ul>
          </div>
@@ -145,60 +142,6 @@
          </section>
       </div>
    </section>
-   <!-- multilinks-project-->
-   <section class="page-section bg-white p-0" id="multilinks-project">
-      <div id="intro">
-         <div>
-            <div class="brand">
-               <img class="logo img-fluid d-block mx-auto" src="assets/img/multilinks/mds_logo.png" alt="">
-               <h2 class="text-primary">Coming Soon</h2>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- scrapbook-->
-   <section class="page-section text-white bg-primary" id="scrapbook">
-      <div class="container">
-         <h2 class="text-center mt-0">Scrapbook</h2>
-         <hr class="divider-white my-4" />
-         <div class="row">
-            <!-- dev tips-->
-            <div class="shadow rounded col-lg-4 col-sm-6 m-4">
-               <div class="scrapbook-item my-3">
-                  <a class="scrapbook-link" data-toggle="modal" href="#devTipsModal">
-                     <div class="scrapbook-hover">
-                        <div class="scrapbook-hover-content"><i class="fas fa-expand fa-3x"></i></div>
-                     </div>
-                     <img class="img-fluid" src="assets/img/scrapbook/devTipsModal.jpg" alt="" />
-                  </a>
-                  <div class="scrapbook-caption">
-                     <div class="scrapbook-caption-heading text-primary">Dev Tips</div>
-                     <div class="caption-subheading text-muted">
-                        Useful software/programming solutions and tips I picked up along the way.
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- ascii table-->
-            <div class="shadow rounded col-lg-4 col-sm-6 mb-4">
-               <div class="scrapbook-item my-3">
-                  <a class="scrapbook-link" data-toggle="modal" href="#asciiTableModal">
-                     <div class="scrapbook-hover">
-                        <div class="scrapbook-hover-content"><i class="fas fa-expand fa-3x"></i></div>
-                     </div>
-                     <img class="img-fluid" src="assets/img/scrapbook/ascii_table.gif" alt="" />
-                  </a>
-                  <div class="scrapbook-caption">
-                     <div class="scrapbook-caption-heading text-primary">Ascii Table</div>
-                     <div class="caption-subheading text-muted">
-                        For quick reference when I need it.
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
    <!-- about-->
    <section class="page-section" id="about">
       <div class="container">
@@ -269,83 +212,6 @@
          <div class="small text-center text-muted">Copyright © 2020 - Chris Dinh</div>
       </div>
    </footer>
-
-   <!-- devTipsModal-->
-   <div class="scrapbook-modal modal fade" id="devTipsModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
-            </div>
-            <div class="container">
-               <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                     <div class="modal-body">
-                        <h2 class="text-primary">Dev Tips</h2>
-                        <p class="item-intro text-muted">
-                           Useful software/programming solutions and tips I picked up along the way
-                        </p>
-                        <img class="img-fluid d-block mx-auto" src="assets/img/scrapbook/devTipsModal.jpg" alt="" />
-                        <div class="text-left text-muted">
-                           <h4 class="pb-2 text-center">Powershell and Azure</h4>
-                           <hr class="divider-orange my-4 text-center" />
-                           <p class="text-primary text-center">
-                              Tracing Azure ARM template deployment error
-                           </p>
-                           <p>
-                              Using Azure Resource Manager (ARM) template and Powershell is a great way to automate our
-                              Azure resources and infrastructure. But sometimes things goes pear-shaped and we get the
-                              following error:
-                           </p>
-                           <p class="caption-subheading">
-                              Error: Code=InvalidTemplateDeployment; Message=The template deployment
-                              'ProjectResourceGroup-0425-2035' is
-                              not valid according to the validation procedure. The tracking id is
-                              'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'.
-                              See inner errors for details.
-                           </p>
-                           <p>
-                              We can issue the following command to get more details:
-                           </p>
-                           <p class="caption-subheading">
-                              Get-AzLog -CorrelationId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -DetailedOutput
-                           </p>
-                           <hr class="divider-orange my-4 text-center" />
-                        </div>
-                        <button class="btn btn-primary" data-dismiss="modal" type="button">
-                           <i class="fas fa-times mr-1"></i>
-                           Close
-                        </button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-
-   <!-- asciiTableModal-->
-   <div class="scrapbook-modal modal fade" id="asciiTableModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
-            </div>
-            <div class="container">
-               <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                     <div class="modal-body">
-                        <h2 class="text-primary">Ascii Table</h2>
-                        <img class="img-fluid d-block mx-auto" src="assets/img/scrapbook/ascii_table.gif" alt="" />
-                        <button class="btn btn-primary" data-dismiss="modal" type="button">
-                           <i class="fas fa-times mr-1"></i>
-                           Close
-                        </button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
 
    <!-- Bootstrap core JS-->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
