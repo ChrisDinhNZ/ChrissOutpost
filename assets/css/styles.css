@@ -10109,6 +10109,7 @@ hr.light {
 }
 
 header.masthead {
+  height: 100vh;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg-masthead.jpg");
@@ -10122,7 +10123,6 @@ header.masthead h1 {
 }
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
