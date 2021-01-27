@@ -6099,6 +6099,10 @@ a.close.disabled {
   background-color: #f4623a !important;
 }
 
+.bg-main {
+  background-color: #515151 !important;
+}
+
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
@@ -9867,6 +9871,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .text-muted {
   color: #6c757d !important;
+}
+
+.text-muted-white {
+  color: #e6eef5 !important;
 }
 
 .text-black-50 {
