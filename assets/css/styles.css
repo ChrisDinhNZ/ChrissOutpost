@@ -10043,7 +10043,11 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 6rem 0;
+}
+
+.header-image {
+  padding-top: 6rem;
 }
 
 #mainNav {
