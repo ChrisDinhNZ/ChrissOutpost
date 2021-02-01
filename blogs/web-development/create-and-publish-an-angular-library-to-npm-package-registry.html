@@ -39,7 +39,7 @@
       </div>
    </nav>
    <!-- Header image -->
-   <header class="header-image text-muted-white bg-secondary" id="content">
+   <header class="header-image text-muted-white bg-secondary" id="header">
       <div class="container">
          <div class="row justify-content-center">
             <div>
@@ -53,21 +53,57 @@
       <div class="container">
          <div class="row justify-content-center">
             <div class="col-lg-10 mb-3 text-center">
-               <h2 class="text-primary mt-0">Create and publish an Angular library to NPM package registry</h2>
+               <h2 class="text-primary">Create and publish an Angular library to the NPM package registry</h2>
                <hr class="divider-orange my-4" />
             </div>
             <div class="row justify-content-center text-muted-white">
                <div class="col-10 text-justify">
                   <p>
                      Creating an Angular library is a great way to break an application's logic into modules with specific functionalities.
-                     It is also less coupled with the applications that uses it therefore provides better code reuse and software maintainability.
+                     It is also less coupled with the applications that consumes it therefore provides better code reuse and software maintainability.
                   </p>
                   <p>
-                     So why would I want to publish an Angular library to the NPM package registry? Well I have been tinkering with a messaging protocol
-                     so that I can communicate between embedded devices and the web. With the web, I anticipate multiple web applications interacting with
-                     each other so having a published package in one place just makes everything much simpler. For web applications I leaned more towards
-                     Angular as my go to SPA framework to use.
+                     So why do I want to publish an Angular library to the NPM package registry? Well I have been tinkering with a messaging protocol
+                     so that I can communicate between embedded devices and the web. I anticipate having multiple web applications interacting with
+                     each other so having a published package in one place just makes my dev flow much simpler and less error prone.
                   </p>
+                  <p>
+                     In this blog we will work through the following:
+                  </p>
+                  <ul>
+                     <li>Create library</li>
+                     <li>Publish library</li>
+                     <li>Import and use library</li>
+                  </ul>
+                  <section class="mt-5 mb-5">
+                     <h6 class="text-primary">Create library</h6>
+                     <p>
+                        To create a library you will need <a href="https://cli.angular.io/">Angular CLI</a> installed.
+                     </p>
+                     <section class="row layout-cards">
+                        <code class="col-12 shadow card my-2 rounded bg-dark">
+                           <div class="card-body">
+                              <div class="card-text text-success">
+                                 <div>ng new SMoS-npm --create-application=false</div>
+                                 <div>cd SMoS-npm</div>
+                                 <div>ng generate library smos-npm</div>
+                              </div>
+                           </div>
+                        </code>
+                     </section>
+                  </section>
+                  <section class="mt-5 mb-5">
+                     <h6 class="text-primary">Publish library</h6>
+                     <p>
+                        To publish a library to NPM package registry you will need an <a href="https://www.npmjs.com/">NPM</a> account.
+                     </p>
+                  </section>
+                  <section class="mt-5 mb-5">
+                     <h6 class="text-primary">Import and use library</h6>
+                     <p>
+                        Placeholder.
+                     </p>
+                  </section>
                </div>
             </div>
          </div>
