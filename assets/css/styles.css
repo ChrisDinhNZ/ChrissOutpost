@@ -186,6 +186,11 @@ samp {
   font-size: 1em;
 }
 
+emphasis {
+  color: gray;
+  font-style: italic;
+}
+
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -504,7 +509,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: #28a745;
   word-wrap: break-word;
 }
 a > code {

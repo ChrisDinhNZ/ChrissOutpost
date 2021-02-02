@@ -68,7 +68,7 @@
                      each other so having a published package in one place just makes my dev flow much simpler and less error prone.
                   </p>
                   <p>
-                     In this blog we will work through the following:
+                     In this blog I will work through the following:
                   </p>
                   <ul>
                      <li>Create library</li>
@@ -78,24 +78,34 @@
                   <section class="mt-5 mb-5">
                      <h6 class="text-primary">Create library</h6>
                      <p>
-                        To create a library you will need <a href="https://cli.angular.io/">Angular CLI</a> installed.
+                        To create this library I will need <a href="https://cli.angular.io/">Angular CLI</a>, which I have already installed.
                      </p>
-                     <section class="row layout-cards">
-                        <code class="col-12 shadow card my-2 rounded bg-dark">
-                           <div class="card-body">
-                              <div class="card-text text-success text-left text-nowrap overflow-auto">
-                                 <div>ng new SMoS-npm --create-application=false</div>
-                                 <div>cd SMoS-npm</div>
-                                 <div>ng generate library smos-npm</div>
-                              </div>
-                           </div>
+                     <p>
+                        The following command will create a "workspace" for the library. The <emphasis>--create-application=false</emphasis> flag
+                        tells the CLI not to scaffold the default Angular application since I am going to create a library.
+                     </p>
+                     <section class="row shadow rounded bg-dark m-2 p-2">
+                        <code class="col-12 text-success text-left text-nowrap overflow-auto">
+                           ng new SMoS-npm --create-application=false
+                        </code>
+                     </section>
+                     <p>
+                        The previous command will also initialise a git repository, which is good because I preferably have my work version controlled.
+                        I am just going to go ahead and push what I have so far to GitHub (note that not everything under the <emphasis>SMoS-npm</emphasis> folder
+                        will be push to the remote repository as files and folders defined in <emphasis>.gitignore</emphasis> will not be included).
+                     </p>
+                     <section class="row shadow rounded bg-dark m-2 p-2">
+                        <code class="col-12 text-success text-left text-nowrap overflow-auto">
+                           <div>git remote add origin https://github.com/ChrisDinhNZ/SMoS-npm.git</div>
+                           <div>git branch -M main</div>
+                           <div>git push -u origin main</div>
                         </code>
                      </section>
                   </section>
                   <section class="mt-5 mb-5">
                      <h6 class="text-primary">Publish library</h6>
                      <p>
-                        To publish a library to NPM package registry you will need an <a href="https://www.npmjs.com/">NPM</a> account.
+                        To publish a library to NPM package registry I will need an <a href="https://www.npmjs.com/">NPM</a> account, which I have already created.
                      </p>
                   </section>
                   <section class="mt-5 mb-5">
