@@ -505,7 +505,10 @@ mark,
 code {
   font-size: 87.5%;
   color: #28a745;
-  word-wrap: break-word;
+  text-align: start;
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 1rem;
 }
 a > code {
   color: inherit;
