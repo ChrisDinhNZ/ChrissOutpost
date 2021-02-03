@@ -84,9 +84,9 @@
                         The following command will create a "workspace" for the library. The <emphasis>--create-application=false</emphasis> flag
                         tells the CLI not to scaffold the default Angular application since I am going to create a library.
                      </p>
-                     <section class="row shadow rounded bg-dark m-2 p-2">
+                     <section class="row shadow rounded bg-dark m-3 p-2">
                         <code class="col-12 text-success text-left text-nowrap overflow-auto">
-                           ng new SMoS-npm --create-application=false
+                           <div>ng new SMoS-npm --create-application=false</div>
                         </code>
                      </section>
                      <p>
@@ -94,13 +94,26 @@
                         I am just going to go ahead and push what I have so far to GitHub (note that not everything under the <emphasis>SMoS-npm</emphasis> folder
                         will be push to the remote repository as files and folders defined in <emphasis>.gitignore</emphasis> will not be included).
                      </p>
-                     <section class="row shadow rounded bg-dark m-2 p-2">
+                     <section class="row shadow rounded bg-dark m-3 p-2">
                         <code class="col-12 text-success text-left text-nowrap overflow-auto">
+                           <div>cd SMoS-npm</div>
                            <div>git remote add origin https://github.com/ChrisDinhNZ/SMoS-npm.git</div>
                            <div>git branch -M main</div>
                            <div>git push -u origin main</div>
                         </code>
                      </section>
+                     <p>
+                        The following command creates the <emphasis>projects/smos-js</emphasis> folder, which contains a component and a service inside an NgModule.
+                     </p>
+                     <section class="row shadow rounded bg-dark m-3 p-2">
+                        <code class="col-12 text-success text-left text-nowrap overflow-auto">
+                           <div>ng generate library smos-js</div>
+                        </code>
+                     </section>
+                     <p>
+                        Since I only intends for the library to provide a service, I can get rid of <emphasis>smos-js.component.ts</emphasis> and
+                        any reference to it.
+                     </p>
                   </section>
                   <section class="mt-5 mb-5">
                      <h6 class="text-primary">Publish library</h6>
