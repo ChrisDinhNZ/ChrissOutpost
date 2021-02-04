@@ -50,84 +50,84 @@
    </header>
    <!-- Content -->
    <section class="page-section text-muted-white bg-secondary" id="content">
-      <div class="container">
-         <div class="row justify-content-center">
-            <div class="col-lg-10 mb-3 text-center">
+      <div class="container justify-content-center">
+         <div class="row">
+            <div class="text-center">
                <h2 class="text-primary">Create and publish an Angular library to the NPM package registry</h2>
                <hr class="divider-orange my-4" />
             </div>
-            <div class="row justify-content-center text-muted-white">
-               <div class="col-10 text-justify">
+         </div>
+         <div class="row">
+            <div class="col-12">
+               <p>
+                  Creating an Angular library is a great way to break an application's logic into modules with specific functionalities.
+                  It is also less coupled with the applications that consumes it therefore provides better code reuse and software maintainability.
+               </p>
+               <p>
+                  So why do I want to publish an Angular library to the NPM package registry? Well I have been tinkering with a messaging protocol
+                  so that I can communicate between embedded devices and the web. I anticipate having multiple web applications interacting with
+                  each other so having a published package in one place just makes my dev flow much simpler and less error prone.
+               </p>
+               <p>
+                  In this blog I will work through the following:
+               </p>
+               <ul>
+                  <li>Create library</li>
+                  <li>Publish library</li>
+                  <li>Import and use library</li>
+               </ul>
+               <section>
+                  <h6 class="text-primary">Create library</h6>
                   <p>
-                     Creating an Angular library is a great way to break an application's logic into modules with specific functionalities.
-                     It is also less coupled with the applications that consumes it therefore provides better code reuse and software maintainability.
+                     To create this library I will need <a href="https://cli.angular.io/">Angular CLI</a>, which I have already installed.
                   </p>
                   <p>
-                     So why do I want to publish an Angular library to the NPM package registry? Well I have been tinkering with a messaging protocol
-                     so that I can communicate between embedded devices and the web. I anticipate having multiple web applications interacting with
-                     each other so having a published package in one place just makes my dev flow much simpler and less error prone.
+                     The following command will create a "workspace" for the library. The <emphasis>--create-application=false</emphasis> flag
+                     tells the CLI not to scaffold the default Angular application since I am going to create a library.
                   </p>
+                  <section class="row shadow rounded bg-dark mt-3 mb-3">
+                     <code class="col-12">
+                        <div>ng new SMoS-npm --create-application=false</div>
+                     </code>
+                  </section>
                   <p>
-                     In this blog I will work through the following:
+                     The previous command will also initialise a git repository, which is good because I preferably have my work version controlled.
+                     I am just going to go ahead and push what I have so far to GitHub (note that not everything under the <emphasis>SMoS-npm</emphasis> folder
+                     will be push to the remote repository as files and folders defined in <emphasis>.gitignore</emphasis> will not be included).
                   </p>
-                  <ul>
-                     <li>Create library</li>
-                     <li>Publish library</li>
-                     <li>Import and use library</li>
-                  </ul>
-                  <section class="mt-5 mb-5">
-                     <h6 class="text-primary">Create library</h6>
-                     <p>
-                        To create this library I will need <a href="https://cli.angular.io/">Angular CLI</a>, which I have already installed.
-                     </p>
-                     <p>
-                        The following command will create a "workspace" for the library. The <emphasis>--create-application=false</emphasis> flag
-                        tells the CLI not to scaffold the default Angular application since I am going to create a library.
-                     </p>
-                     <section class="row shadow rounded bg-dark mt-3 mb-3">
-                        <code class="col-12">
-                           <div>ng new SMoS-npm --create-application=false</div>
-                        </code>
-                     </section>
-                     <p>
-                        The previous command will also initialise a git repository, which is good because I preferably have my work version controlled.
-                        I am just going to go ahead and push what I have so far to GitHub (note that not everything under the <emphasis>SMoS-npm</emphasis> folder
-                        will be push to the remote repository as files and folders defined in <emphasis>.gitignore</emphasis> will not be included).
-                     </p>
-                     <section class="row shadow rounded bg-dark mt-3 mb-3">
-                        <code class="col-12">
-                           <div>cd SMoS-npm</div>
-                           <div>git remote add origin https://github.com/ChrisDinhNZ/SMoS-npm.git</div>
-                           <div>git branch -M main</div>
-                           <div>git push -u origin main</div>
-                        </code>
-                     </section>
-                     <p>
-                        The following command creates the <emphasis>projects/smos-js</emphasis> folder, which contains a component and a service inside an NgModule.
-                     </p>
-                     <section class="row shadow rounded bg-dark mt-3 mb-3">
-                        <code class="col-12">
-                           <div>ng generate library smos-js</div>
-                        </code>
-                     </section>
-                     <p>
-                        Since I only intends for the library to provide a service, I can get rid of <emphasis>smos-js.component.ts</emphasis> and
-                        any reference to it.
-                     </p>
+                  <section class="row shadow rounded bg-dark mt-3 mb-3">
+                     <code class="col-12">
+                        <div>cd SMoS-npm</div>
+                        <div>git remote add origin https://github.com/ChrisDinhNZ/SMoS-npm.git</div>
+                        <div>git branch -M main</div>
+                        <div>git push -u origin main</div>
+                     </code>
                   </section>
-                  <section class="mt-5 mb-5">
-                     <h6 class="text-primary">Publish library</h6>
-                     <p>
-                        To publish a library to NPM package registry I will need an <a href="https://www.npmjs.com/">NPM</a> account, which I have already created.
-                     </p>
+                  <p>
+                     The following command creates the <emphasis>projects/smos-js</emphasis> folder, which contains a component and a service inside an NgModule.
+                  </p>
+                  <section class="row shadow rounded bg-dark mt-3 mb-3">
+                     <code class="col-12">
+                        <div>ng generate library smos-js</div>
+                     </code>
                   </section>
-                  <section class="mt-5 mb-5">
-                     <h6 class="text-primary">Import and use library</h6>
-                     <p>
-                        Placeholder.
-                     </p>
-                  </section>
-               </div>
+                  <p>
+                     Since I only intends for the library to provide a service, I can get rid of <emphasis>smos-js.component.ts</emphasis> and
+                     any reference to it.
+                  </p>
+               </section>
+               <section class="mt-5 mb-5">
+                  <h6 class="text-primary">Publish library</h6>
+                  <p>
+                     To publish a library to NPM package registry I will need an <a href="https://www.npmjs.com/">NPM</a> account, which I have already created.
+                  </p>
+               </section>
+               <section class="mt-5 mb-5">
+                  <h6 class="text-primary">Import and use library</h6>
+                  <p>
+                     Placeholder.
+                  </p>
+               </section>
             </div>
          </div>
       </div>
