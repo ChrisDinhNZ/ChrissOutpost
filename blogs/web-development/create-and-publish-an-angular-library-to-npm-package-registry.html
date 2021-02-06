@@ -65,12 +65,12 @@
                      It is also less coupled with the applications that consumes it therefore provides better code reuse and software maintainability.
                   </p>
                   <p>
-                     So why do I want to publish an Angular library to the NPM package registry? Well I have been tinkering with a messaging protocol
+                     So why do we want to publish an Angular library to the NPM package registry? Well I have been tinkering with a messaging protocol
                      so that I can communicate between embedded devices and the web. I anticipate having multiple web applications interacting with
                      each other so having a published package in one place just makes my dev flow much simpler and less error prone.
                   </p>
                   <p>
-                     In this blog I will work through the following:
+                     In this blog we will work through the following:
                   </p>
                   <ul>
                      <li>Create library</li>
@@ -82,11 +82,11 @@
                   <h6 class="text-primary">Create library</h6>
                   <div>
                      <p>
-                        To create this library I will need <a href="https://cli.angular.io/">Angular CLI</a>, which I have already installed.
+                        To create this library we will need <a href="https://cli.angular.io/">Angular CLI</a>, which I have already installed.
                      </p>
                      <p>
                         The following command will create a "workspace" for the library. The <emphasis>--create-application=false</emphasis> flag
-                        tells the CLI not to scaffold the default Angular application since I am going to create a library.
+                        tells the CLI not to scaffold the default Angular application since we are going to create a library.
                      </p>
                   </div>
                   <div class="row shadow rounded bg-dark mt-3 mb-3">
@@ -97,7 +97,7 @@
                   <div>
                      <p>
                         The previous command will also initialise a git repository, which is good because I preferably have my work version controlled.
-                        I am just going to go ahead and push what I have so far to GitHub (note that not everything under the <emphasis>SMoS-npm</emphasis> folder
+                        We are just going to go ahead and push what we have so far to GitHub (note that not everything under the <emphasis>SMoS-npm</emphasis> folder
                         will be push to the remote repository as files and folders defined in <emphasis>.gitignore</emphasis> will not be included).
                      </p>
                   </div>
@@ -121,7 +121,7 @@
                   </div>
                   <div>
                      <p>
-                        Since I only intends for the library to provide a service, I can get rid of <emphasis>smos-js.component.ts</emphasis> and
+                        Since we only intends for the library to provide a service, we can get rid of <emphasis>smos-js.component.ts</emphasis> and
                         any reference to it.
                      </p>
                   </div>
@@ -129,7 +129,7 @@
                <section class="my-5">
                   <h6 class="text-primary">Publish library</h6>
                   <p>
-                     To publish a library to NPM package registry I will need an <a href="https://www.npmjs.com/">NPM</a> account, which I have already created.
+                     To publish a library to NPM package registry we will need an <a href="https://www.npmjs.com/">NPM</a> account, which I have already created.
                   </p>
                </section>
                <section class="my-5">
