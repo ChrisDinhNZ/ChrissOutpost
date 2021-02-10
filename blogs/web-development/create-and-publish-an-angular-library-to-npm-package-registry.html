@@ -124,6 +124,9 @@
                         Since we only intends for the library to provide a service, we can get rid of <emphasis>smos-js.component.ts</emphasis> and
                         any reference to it.
                      </p>
+                     <p>
+                        We will add a simple method to the service. This method just returns the value of <emphasis>SMOS_HEX_STRING_MIN_LENGTH</emphasis>
+                     </p>
                   </div>
                </section>
                <section class="my-5">
@@ -134,9 +137,16 @@
                </section>
                <section class="my-5">
                   <h6 class="text-primary">Import and use library</h6>
-                  <p>
-                     Placeholder.
-                  </p>
+                  <div>
+                     <p>
+                        We will also create an Angular app which we will use to demostrate the importing and usage of the library.
+                     </p>
+                  </div>
+                  <div class="row shadow rounded bg-dark mt-3 mb-3">
+                     <code class="col-12">
+                        <div>ng generate application smos-js-demo</div>
+                     </code>
+                  </div>
                </section>
             </div>
          </div>
